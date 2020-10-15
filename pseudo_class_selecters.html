@@ -1,0 +1,42 @@
+<!-- I watched the html YouTube video of 생활코딩 and wrote the code. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <style>
+/* 가상선택자는 element의 상태에 따라 선택되기도 하고
+선택되지 않기도 하다 */
+/* active 같은 경우에도 누르고 있을 경우에만 변하게 하기
+때문에 가상선택자이다 */
+/* visited 같은 경우에는 보안적인 부분에서 일부 속성만 사용가능 */
+/* focus는 여러가지 이유로 인해서 가장 뒤에다 넣는게 좋다 */
+        a:link{
+            color:orange;
+        }
+        a:visited{
+            color:red;
+        }
+        a:hover{
+            color:greenyellow;
+        }
+        a:active{
+            color:grey;
+        }
+        a:focus{
+            background-color:khaki;
+        }
+        input:focus{
+            background-color:black;
+            color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.naver.com/">네이버</a>
+    <a href="https://www.google.co.kr/">구글</a>
+    <a href="https://www.youtube.com/">유튜브</a><br>
+    <input type="text"> 
+</body>
+</html>
